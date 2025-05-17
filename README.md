@@ -1,41 +1,77 @@
-# Guardian AI: Seu Primeiro Socorro Inteligente ⚕️
+# 🤖 AI - Primeiros Socorros: Seu Agente para Emergências de Saúde
 
-## 📖 A História Por Trás da Solução
-
-Imagine a cena: um ente querido subitamente começa a passar mal. O pânico toma conta. Você sabe que precisa agir, mas cada segundo conta e a incerteza de "o que fazer?" é esmagadora. Será que é algo simples ou uma emergência grave? Como aplicar o primeiro socorro corretamente? Onde encontrar ajuda médica mais próxima, AGORA?
-
-Nesses momentos críticos, a informação rápida, precisa e acessível não é apenas útil, é vital. Infelizmente, a maioria das pessoas não tem conhecimento aprofundado em primeiros socorros, e a busca por informações online em um cenário de estresse é ineficiente e arriscada.
-
-É aqui que o **Guardian AI** entra em ação.
-
-Nosso projeto nasceu da necessidade urgente de democratizar o acesso a orientações de primeiros socorros confiáveis e de fornecer um suporte imediato durante emergências. Não é um substituto para profissionais de saúde, mas um companheiro inteligente que te guia nos momentos mais difíceis, oferecendo clareza e direção quando você mais precisa.
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python)
+![Google Gemini](https://img.shields.io/badge/Google%20Gemini-AI-green?style=for-the-badge&logo=google)
+![Google Maps API](https://img.shields.io/badge/Google%20Maps-API-red?style=for-the-badge&logo=googlemaps)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-yellow?style=for-the-badge&logo=googlecolab)
 
 ---
-## 🩹 O Problema Resolvido: A Lacuna entre o Pânico e a Ação
 
-Em uma emergência médica, os desafios são muitos:
+## 🚑 O Problema: Emergências de Saúde e a Necessidade de Orientação Imediata
 
-* **Pânico e Estresse**: Dificultam o pensamento claro e a tomada de decisões.
-* **Falta de Conhecimento**: A maioria das pessoas não possui treinamento formal em primeiros socorros.
-* **Acesso à Informação**: Buscar e filtrar informações confiáveis rapidamente na internet é quase impossível sob pressão.
-* **Localização de Ajuda**: Identificar o hospital ou clínica mais próximo e obter rotas eficientes é um obstáculo.
-* **Avaliação da Gravidade**: Distinguir entre uma situação que exige 192 (SAMU) e uma que pode esperar um atendimento ambulatorial.
-
-O Guardian AI aborda todos esses pontos, agindo como um farol de informação e orientação.
+Em momentos de emergência de saúde, seja uma dor súbita no peito, um ferimento inesperado ou um mal-estar agudo, o pânico pode tomar conta. A falta de conhecimento imediato sobre os primeiros socorros adequados pode agravar a situação, e a busca por informações online muitas vezes resulta em dados dispersos, não confiáveis ou difíceis de interpretar sob pressão. Quando cada segundo conta, ter acesso a orientações claras, precisas e personalizadas é crucial, mas nem sempre uma ambulância ou um médico está disponível no exato momento.
 
 ---
-## ✨ A Solução: Guardian AI - Seu Companheiro de Primeiros Socorros Multimodelo
 
-O **Guardian AI** é um sistema avançado de **agentes de inteligência artificial orquestrados**, projetado para fornecer suporte de primeiros socorros instantâneo e inteligente. Utilizando o poder dos modelos Gemini do Google AI Studio e as APIs do Google Maps, ele transforma a confusão em clareza, o pânico em ação.
+## ✨ A Solução: Um Agente de IA para Primeiros Socorros
 
-### Como Funciona (A Magia Por Trás):
+Apresentamos o **AI First Aid Assistant**, um sistema inteligente construído com o poder do **Google Gemini (via Google Agent Development Kit - ADK)** e a precisão do **Google Maps API**. Este projeto visa preencher a lacuna de informação em momentos críticos, oferecendo um guia interativo de primeiros socorros que não só orienta sobre como proceder, mas também avalia a gravidade da situação e localiza ajuda médica próxima.
 
-Imagine uma equipe de especialistas, cada um com uma função específica, trabalhando em perfeita sincronia para te ajudar:
+Imagine ter um assistente pessoal que, ao descrever o que sente, pode:
+* Realizar uma **triagem inicial** dos sintomas.
+* **Consolidar informações** para um quadro completo.
+* Buscar **orientações confiáveis** de primeiros socorros em tempo real.
+* **Avaliar a urgência** da situação, recomendando ligar para o SAMU (192) se for uma emergência vital.
+* **Localizar hospitais e clínicas** nas proximidades.
+* Gerar **rotas diretas no Google Maps** para os locais de atendimento mais relevantes.
 
-* **Agente de Triagem**: O primeiro a te ouvir. Ele coleta seus sintomas iniciais, focando em entender rapidamente a situação.
-* **Agente de Consolidação de Sintomas**: Garante que todas as informações, tanto as iniciais quanto as adicionais, sejam combinadas em um resumo claro e completo.
-* **Agente de Busca de Primeiros Socorros**: Este "bibliotecário" inteligente usa a busca do Google para encontrar as informações mais confiáveis sobre a condição descrita, focando em fontes médicas oficiais.
-* **Agente de Planejamento de Ações**: Analisa os resultados da busca e cria um plano de primeiros socorros conciso e priorizado, indicando o que você precisa fazer AGORA.
-* **Agente de Orientação Detalhada**: Transforma o plano em instruções claras e fáceis de seguir, podendo até sugerir vídeos do YouTube para demonstrações práticas.
-* **Agente de Avaliação de Emergência**: O "especialista em gravidade" que determina se a situação é uma emergência para o SAMU (192) ou se é possível procurar um hospital/clínica.
-* **Agentes de Localização e Rotas (com Assistência de Mapas)**: Estes agentes inteligentes trabalham em conjunto com as APIs do Google Maps para localizar hospitais e médicos próximos
+Este agente não substitui o atendimento médico profissional, mas serve como uma ferramenta de **orientação imediata** que pode salvar vidas ou minimizar danos até a chegada da ajuda especializada, transformando o pânico em ação informada.
+
+---
+
+## 🛠️ Como Funciona: A Orquestração de Agentes Inteligentes
+
+O AI First Aid Assistant opera através de uma arquitetura modular, onde diferentes **Agentes de IA**, cada um com uma especialidade, colaboram sob a orquestração de uma função principal. Isso garante uma resposta estruturada, precisa e abrangente, passo a passo:
+
+### Visão Geral da Arquitetura:
+
+1.  **Coleta Inicial de Sintomas:** O usuário descreve o que sente.
+2.  **Expansão e Consolidação:** O sistema faz perguntas adicionais para obter um quadro completo.
+3.  **Busca de Informações:** Utiliza a web (Google Search) para encontrar guias de primeiros socorros.
+4.  **Planejamento de Ações:** Formula um plano de ação claro.
+5.  **Avaliação de Emergência:** Determina a gravidade da situação e a necessidade de acionar serviços de emergência.
+6.  **Localização de Ajuda Médica:** Busca hospitais e médicos próximos.
+7.  **Geração de Rotas:** Oferece links para rotas no Google Maps.
+8.  **Orientação Final Detalhada:** Compila todas as informações em um guia prático para o usuário.
+
+### Os Agentes em Ação:
+
+* **`agente_triagem`**: Inicia a conversa, coletando a descrição inicial dos sintomas.
+* **`agente_coleta_sintomas_adicionais`**: Consolida os sintomas iniciais e informações adicionais do usuário em uma descrição completa e coesa.
+* **`agente_busca_primeiros_socorros`**: Especialista em pesquisa, utiliza a ferramenta `Google Search` para encontrar as melhores práticas e orientações de primeiros socorros para a condição descrita, focando em fontes confiáveis.
+* **`agente_planejamento_acoes`**: Analisa os resultados da busca e elabora um plano de ação conciso e priorizado para o usuário.
+* **`agente_avaliacao_emergencia`**: Avalia a gravidade da situação com base nos sintomas e no plano, instruindo o usuário a ligar para o SAMU (192) se for uma emergência grave, ou a procurar atendimento médico se for menos urgente.
+* **`agente_localizacao_ajuda_medica`**: Racicína sobre a necessidade de ajuda médica e sinaliza a busca por hospitais e médicos próximos, que é executada por funções auxiliares da API do Google Maps.
+* **`agente_rota_navegacao`**: Raciocina sobre a necessidade de rotas e sinaliza a geração de links para navegação, também executada por funções auxiliares do Google Maps.
+* **`agente_orientacao_detalhada`**: O agente final, que compila todas as informações geradas pelos passos anteriores (sintomas, busca, plano, avaliação de emergência, locais encontrados) e as sintetiza em um guia claro e acionável de primeiros socorros para o usuário. Pode até sugerir links para vídeos explicativos.
+
+---
+
+## 🚀 Primeiros Passos: Configuração e Execução
+
+Para rodar o AI First Aid Assistant, você precisará de um ambiente Google Colab e configurar algumas chaves de API.
+
+### Pré-requisitos:
+
+* Conta Google para acessar o Google Colab e o Google Cloud Console.
+* Conexão à internet.
+
+### 1. Instalação das Bibliotecas
+
+Abra um novo notebook no [Google Colab](https://colab.research.google.com/) e execute a seguinte célula **separadamente**. Após a execução, o Colab pedirá para **reiniciar o ambiente de execução (runtime)**. **É crucial que você reinicie e espere o kernel estar pronto antes de prosseguir para a próxima etapa.**
+
+```python
+# CÉLULA 1: Instalação e Reinício do Ambiente
+%pip -q install google-genai google-adk aiohttp
+# Após a execução, o Colab irá reiniciar o kernel.
+# ESPERE o Colab reiniciar ANTES de executar a próxima célula.
