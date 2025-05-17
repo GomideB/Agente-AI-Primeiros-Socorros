@@ -1,8 +1,5 @@
 # Guardian AI: Seu Primeiro Socorro Inteligente ⚕️
 
-Prepare-se para o seu projeto brilhar no GitHub! Este `README.md` foi elaborado para ser altamente persuasivo, com storytelling, e detalhar o problema que seu agente de IA resolve.
-
----
 ## 📖 A História Por Trás da Solução
 
 Imagine a cena: um ente querido subitamente começa a passar mal. O pânico toma conta. Você sabe que precisa agir, mas cada segundo conta e a incerteza de "o que fazer?" é esmagadora. Será que é algo simples ou uma emergência grave? Como aplicar o primeiro socorro corretamente? Onde encontrar ajuda médica mais próxima, AGORA?
