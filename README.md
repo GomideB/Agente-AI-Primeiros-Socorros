@@ -98,7 +98,7 @@ Abra um novo notebook no [Google Colab](https://colab.research.google.com/) e ex
 %pip -q install google-genai google-adk aiohttp
 # Após a execução, o Colab irá reiniciar o kernel.
 # ESPERE o Colab reiniciar ANTES de executar a próxima célula.
-```python
+```
 
 ### 4. Execute o Código Principal
 Após o kernel do Colab ter sido reiniciado e estar pronto, copie e cole todo o código (da seção de Configurações Iniciais até o final da função main()) em uma nova célula no seu notebook e execute-a.
