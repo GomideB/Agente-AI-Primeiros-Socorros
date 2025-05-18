@@ -66,36 +66,42 @@ Para rodar o AI Primeiros Socorros, você precisará de um ambiente Google Colab
 
 * Conta Google para acessar o Google Colab e o Google Cloud Console.
 * Conexão à internet.
-* Chave de API do Google Gemini.
-* Chave de API do Google Maps (para o serviço de Places e Directions).
+* **Chave de API do Google Gemini**.
+* **Chave de API do Google Maps** (para os serviços de Places e Directions).
 
 ### 1. Obtenha suas Chaves de API
 
-* **Google Gemini API Key (`GOOGLE_API_KEY`):**
+Primeiro, você precisará gerar suas chaves de API nas plataformas Google. Guarde-as em um local seguro, pois precisará delas para o próximo passo.
+
+* **Chave de API do Google Gemini (`GOOGLE_API_KEY`):**
     * Acesse o [Google AI Studio](https://ai.google.dev/gemini-api/docs/get-started/web).
     * Siga as instruções para criar e copiar sua chave de API.
-* **Google Maps API Key (`Maps_API`):**
+* **Chave de API do Google Maps (`Maps_API`):**
     * Acesse o [Google Cloud Console](https://console.cloud.google.com/apis/credentials).
-    * Crie um novo projeto ou selecione um existente.
-    * Habilite as APIs **"Places API"** e **"Directions API"** para o seu projeto.
-    * Crie uma chave de API e copie-a. Recomenda-se restringir a chave para uso apenas por suas aplicações (por exemplo, por domínio ou IP) para maior segurança.
+    * Selecione um projeto existente ou crie um novo.
+    * No menu lateral, vá em **"APIs e Serviços" > "Biblioteca"**.
+    * Procure e **habilite** as APIs **"Places API"** e **"Directions API"** para o seu projeto.
+    * No menu lateral, vá em **"APIs e Serviços" > "Credenciais"**.
+    * Clique em **"Criar Credenciais" > "Chave de API"**.
+    * Copie a chave gerada. **Recomenda-se fortemente restringir esta chave** para uso apenas pelas suas aplicações (por exemplo, por domínio ou IP) para maior segurança.
 
 ### 2. Configure as Chaves de API no Google Colab
 
-No seu notebook Google Colab, vá para o ícone de uma **chave/cadeado** (🔒) na barra lateral esquerda para abrir a aba "Secrets" (Segredos). Adicione suas chaves com os nomes exatos:
+Agora que você tem suas chaves, vamos configurá-las de forma segura no Google Colab usando os **Segredos (Secrets)**. Isso evita que suas chaves fiquem expostas diretamente no código, aumentando a segurança.
 
-* **`GOOGLE_API_KEY`** (valor da sua chave Gemini)
-* **`Maps_API`** (valor da sua chave do Google Maps)
+1.  Abra seu notebook no [Google Colab](https://colab.research.google.com/).
+2.  Na barra lateral esquerda do Colab, clique no ícone de uma **chave/cadeado (🔒)**. Esta é a aba "Secrets".
+3.  Adicione duas novas variáveis de ambiente (segredos) com os **nomes exatos** listados abaixo:
+    * **`GOOGLE_API_KEY`**: Cole aqui o **valor da sua chave Gemini**.
+    * **`Maps_API`**: Cole aqui o **valor da sua chave do Google Maps**.
+4.  Certifique-se de que a opção **"Notebook access"** (Acesso ao notebook) esteja **ativada** para ambas as chaves. Isso permite que seu código Python acesse essas chaves de forma segura.
 
-Certifique-se de que a opção "Notebook access" (Acesso ao notebook) esteja ativada para ambas as chaves.
+---
 
-### 3. Instalação das Bibliotecas
+### 3. Executando o Código Principal
+Obtenha o código na pasta Primeiros_Socorros_AGENTE_AI. Clique em abrir com o Colab.
 
-Abra um novo notebook no [Google Colab](https://colab.research.google.com/) e execute a seguinte célula **separadamente**. Após a execução, o Colab pedirá para **reiniciar o ambiente de execução (runtime)**. **É crucial que você reinicie e espere o kernel estar pronto antes de prosseguir para a próxima etapa.**
+Troque as Chaves de acesso: No código troque as chaves de API dos "Secrets" que você configurou no Passo 2. As linhas os.environ["GOOGLE_API_KEY"] = userdata.get('GOOGLE_API_KEY') e os.environ["Maps_API"] = userdata.get('Maps_API')  na célula 3 do código são responsáveis por isso; você precisa fazer a substituição de chaves diretamente no código, pelas chaves que você criou.
+Execute Tudo: No menu superior do Colab, vá em "Ambiente de execução" (Runtime) e selecione "Executar tudo" (Run all). 
+O sistema AI Primeiros Socorros será iniciado e você poderá interagir com ele diretamente através do console do Colab, fornecendo a descrição dos sintomas!
 
-```python
-%pip -q install google-genai google-adk aiohttp
-```
-
-### 4. Execute o Código Principal
-Após o kernel do Colab ter sido reiniciado e estar pronto, copie e cole todo o código (da seção de Configurações Iniciais até o final da função main()) em uma nova célula no seu notebook e execute-a.
