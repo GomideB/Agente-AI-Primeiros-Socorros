@@ -94,10 +94,7 @@ Certifique-se de que a opção "Notebook access" (Acesso ao notebook) esteja ati
 Abra um novo notebook no [Google Colab](https://colab.research.google.com/) e execute a seguinte célula **separadamente**. Após a execução, o Colab pedirá para **reiniciar o ambiente de execução (runtime)**. **É crucial que você reinicie e espere o kernel estar pronto antes de prosseguir para a próxima etapa.**
 
 ```python
-# CÉLULA 1: Instalação e Reinício do Ambiente
 %pip -q install google-genai google-adk aiohttp
-# Após a execução, o Colab irá reiniciar o kernel.
-# ESPERE o Colab reiniciar ANTES de executar a próxima célula.
 ```
 
 ### 4. Execute o Código Principal
