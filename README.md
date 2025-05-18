@@ -99,9 +99,10 @@ Agora que você tem suas chaves, vamos configurá-las de forma segura no Google 
 ---
 
 ### 3. Executando o Código Principal
-Obtenha o código na pasta Primeiros_Socorros_AGENTE_AI. Clique em abrir com o Colab.
-
-Troque as Chaves de acesso: No código troque as chaves de API dos "Secrets" que você configurou no Passo 2. As linhas os.environ["GOOGLE_API_KEY"] = userdata.get('GOOGLE_API_KEY') e os.environ["Maps_API"] = userdata.get('Maps_API')  na célula 3 do código são responsáveis por isso; você precisa fazer a substituição de chaves diretamente no código, pelas chaves que você criou.
-Execute Tudo: No menu superior do Colab, vá em "Ambiente de execução" (Runtime) e selecione "Executar tudo" (Run all). 
-O sistema AI Primeiros Socorros será iniciado e você poderá interagir com ele diretamente através do console do Colab, fornecendo a descrição dos sintomas!
+1.  Obtenha o código na pasta Primeiros_Socorros_AGENTE_AI.
+2.  Clique em abrir com o Colab.
+3.  Troque as Chaves de acesso: No código troque as chaves de API dos "Secrets" que você configurou no Passo 2.
+   - As linhas - os.environ["GOOGLE_API_KEY"] = userdata.get('GOOGLE_API_KEY') e os.environ["Maps_API"] = userdata.get('Maps_API') - **na célula 3 do código** são responsáveis por isso. Você precisa fazer a substituição de chaves diretamente no código, trocando pelas chaves que você criou.
+4. Execute Tudo: No menu superior do Colab, vá em **"Ambiente de execução" (Runtime)** e selecione **"Executar tudo" (Run all)**. 
+5. O sistema AI Primeiros Socorros será iniciado e você poderá interagir com ele diretamente através do console do Colab, fornecendo a descrição dos sintomas!
 
